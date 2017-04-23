@@ -1,5 +1,6 @@
 language: java
 script:
 - mvn clean install
+after_success:
 - cd target/
 - java -jar soap-to-rest-0.0.1-SNAPSHOT.jar
